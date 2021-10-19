@@ -1,0 +1,222 @@
+<resources>
+    <string name="app_name">Markeet</string>
+    <string name="app_tag_line">Nền tảng mua sắm trực tuyến cho mọi người</string>
+
+    <string name="title_about">Thông tin</string>
+    <string name="content_about">Nền tảng mua sắm trực tuyến với sản phẩm chất lượng và giá cả cạnh tranh. \n\nNhóm 16 - 2021
+    </string>
+
+    <string name="title_activity_news_info">Tin tức</string>
+    <string name="title_activity_notifications">Thông báo</string>
+    <string name="title_activity_wishlist">Danh sách yêu thích</string>
+    <string name="title_activity_cart">Giỏ hàng</string>
+    <string name="title_activity_checkout">Thanh toán</string>
+    <string name="title_activity_history">Lịch sử đơn hàng</string>
+    <string name="title_activity_settings">Cài đặt</string>
+
+    <!--All data for ActivityMain.java -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="str_nav_shopping_cart">Giỏ hàng</string>
+    <string name="str_nav_wishlist">Danh sách yêu thích</string>
+    <string name="str_nav_history">Lịch sử đơn hàng</string>
+    <string name="str_nav_news">Tin tức</string>
+    <string name="str_nav_notifications">Thông báo</string>
+    <string name="sub_title_nav_others">Khác</string>
+    <string name="str_nav_instruction">Hướng dẫn</string>
+    <string name="str_nav_setting">Cài đặt</string>
+    <string name="str_nav_rate">Đánh giá</string>
+    <string name="str_nav_about">Thông tin</string>
+    <string name="press_again_exit_app">Nhấn một lần nữa để thoát</string>
+
+    <string name="title_what_news">Tin tức mới</string>
+    <string name="title_category">Danh mục</string>
+
+    <!--All data for ActivityCategoryDetails.java -->
+    <string name="title_menu_search">Tìm kiếm</string>
+    <string name="title_menu_delete">Xoá</string>
+
+    <!--All data for ActivityProductDetails.java -->
+    <string name="please_wait_text">Vui lòng đợi cho đến khi dữ liệu được tải</string>
+    <string name="categories_product">Danh mục :&#160;</string>
+    <string name="cannot_add_wishlist">Không thể thêm vào danh sách yêu thích</string>
+    <string name="add_wishlist">Thêm vào danh sách yêu thích</string>
+    <string name="remove_wishlist">Xoá khỏi danh sách yêu thích</string>
+    <string name="add_cart">Thêm vào giỏ hàng</string>
+    <string name="remove_cart">Xóa khỏi giỏ hàng</string>
+    <string name="msg_out_of_stock">Lỗi, sản phẩm hết hàng</string>
+    <string name="msg_suspend">Lỗi, Sản phẩm đang tạm ngừng</string>
+    <string name="out_of_stock">HẾT HÀNG</string>
+    <string name="suspend">ĐÌNH CHỈ</string>
+    <string name="ready_stock">CÓ HÀNG</string>
+    <string name="bt_add_cart">THÊM VÀO GIỎ HÀNG</string>
+    <string name="bt_remove_cart">XOÁ KHỎI GIỎ HÀNG</string>
+
+    <!--All data for ActivitySplash.java -->
+    <string name="title_unable_connect">Không thể kết nối với máy chủ</string>
+    <string name="msg_unable_connect">Máy chủ tạm thời ngừng hoạt động hoặc đang được bảo trì</string>
+    <string name="msg_app_out_date">Ứng dụng đã lỗi thời, vui lòng cập nhật để có phiên bản mới nhất</string>
+    <string name="msg_no_internet">Vui lòng kiểm tra kết nối internet của bạn và thử lại</string>
+    <string name="title_info">Thông tin</string>
+    <string name="title_no_internet">Không có kết nối Internet</string>
+
+    <!--All data for ActivityWishlist.java -->
+    <string name="msg_wishlist_empty">Danh sách yêu thích trống</string>
+    <string name="title_menu_wishlist">Danh sách yêu thích</string>
+
+    <!--All data for ActivityShoppingCart.java -->
+    <string name="msg_cart_empty">Giỏ hàng đang trống</string>
+    <string name="before_tax">( Trước thuế )</string>
+    <string name="total">Tổng cộng&#160;</string>
+    <string name="stock">Hàng hoá : &#160;</string>
+    <string name="QUANTITY">SỐ LƯỢNG</string>
+    <string name="items">Món</string>
+    <string name="title_menu_checkout">Thanh toán</string>
+
+    <!--All data for ActivitySearch.java -->
+    <string name="ALL">TẤT CẢ</string>
+    <string name="Category">Danh mục :&#160;</string>
+    <string name="hint_input_search">Nhập để tìm kiếm</string>
+    <string name="please_fill">Vui lòng điền thông tin tìm kiếm</string>
+
+    <!--All data for ActivityOrderHistory.java -->
+    <string name="msg_history_empty">Lịch sử đặt hàng trống</string>
+    <string name="title_history_details">Chi tiết lịch sử đặt hàng</string>
+
+    <!--All data for ActivityNotification.java -->
+    <string name="msg_notif_empty">Thông báo trống</string>
+
+    <!--All data for ActivityCheckout.java -->
+    <string name="cost_details">Chi tiết chi phí</string>
+    <string name="total_order">Tổng đơn hàng :&#160;</string>
+    <string name="tax">Thuế&#160;</string>
+    <string name="total_fess">Tổng các khoản phí :&#160;</string>
+    <string name="buyer_profile">Hồ sơ người mua</string>
+    <string name="hint_name">Tên</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Điện thoại</string>
+    <string name="hint_address">Địa chỉ</string>
+    <string name="hint_shipping">Vận chuyển</string>
+    <string name="choose_shipping">Chọn đơn vị vận chuyển</string>
+    <string name="hint_date_ship">Ngày giao hàng</string>
+    <string name="hint_comment">Bình luận</string>
+    <string name="product_order_list">Danh sách đặt hàng sản phẩm</string>
+
+    <string name="invalid_name">tên không hợp lệ</string>
+    <string name="invalid_email">email không hợp lệ</string>
+    <string name="invalid_phone">số điện thoại không hợp lệ</string>
+    <string name="invalid_address">địa chỉ không hợp lệ</string>
+    <string name="invalid_shipping">đơn vị vận chuyển không hợp lệ</string>
+    <string name="invalid_date_ship">ngày giao không hợp lệ</string>
+    <string name="invalid_comment">bình luận không hợp lệ</string>
+
+    <string name="title_please_wait">Xin vui lòng chờ</string>
+    <string name="content_submit_checkout">Gửi thanh toán&#8230;</string>
+    <string name="confirmation">Xác nhận</string>
+    <string name="confirm_checkout">Bạn có chắc chắn muốn thanh toán đơn đặt hàng này không?</string>
+    <string name="failed_checkout">
+        Lỗi, Đặt hàng không thành công
+        \n\nĐảm bảo rằng bạn có kết nối internet, hoặc nếu bạn cần trợ giúp, vui lòng Liên hệ với chúng tôi từ menu Cài đặt
+    </string>
+    <string name="success_checkout">Chúc mừng</string>
+    <string name="msg_success_checkout">
+        Thanh toán thành công đơn hàng.\nMã đơn hàng của bạn : %1$s\n\nĐơn đặt hàng của bạn sẽ sớm được kiểm tra. Khi đơn đặt hàng của bạn đã sẵn sàng, chi tiết hóa đơn sẽ được gửi đến email của bạn.
+    </string>
+    <string name="process_checkout">TIẾN HÀNH THANH TOÁN</string>
+
+    <!--All data ActivityNewsInfoDetails.java -->
+    <string name="featured">Nổi bật</string>
+
+    <!--All data for ActivityDialogNotification.java -->
+    <string name="title_notif_details">Chi tiết thông báo</string>
+    <string name="title_notif">Thông báo</string>
+
+    <!--All data ActivityFullScreenImage.java -->
+    <string name="image_of">%1$d trong %2$d</string>
+
+    <!--All data related about page-->
+    <!--Size three array below must be same -->
+    <string-array name="about_title_array">
+        <item>CHÀO MỪNG</item>
+        <item>KHÁM PHÁ SẢN PHẨM</item>
+        <item>THÊM VÀO GIỎ HÀNG</item>
+        <item>XÁC MINH VÀ NHẬN HÀNG</item>
+    </string-array>
+
+    <string-array name="about_description_array">
+        <item>Nền tảng mua sắm trực tuyến cho mọi người</item>
+        <item>Tìm kiếm sản phẩm mới nhất và sản phẩm nổi bật\nVới giá tốt nhất</item>
+        <item>Thêm vào giỏ hàng tất cả sản phẩm bạn cần\nVà kiểm tra đơn hàng</item>
+        <item>Chúng tôi sẽ xác minh đơn đặt hàng của bạn\nThanh toán hóa đơn và nhận sản phẩm</item>
+    </string-array>
+
+    <integer-array name="about_images_array">
+        <item>@drawable/intro_img_1</item>
+        <item>@drawable/intro_img_2</item>
+        <item>@drawable/intro_img_3</item>
+        <item>@drawable/intro_img_4</item>
+    </integer-array>
+
+    <!-- Activity Setting : xml/setting_preference.xml -->
+    <string name="app_version">Phiên bản</string>
+    <string name="developer_email">nlu2021@gmail.com</string>
+
+    <string name="pref_group_notif">THÔNG BÁO</string>
+    <string name="pref_group_others">KHÁC</string>
+    <string name="pref_title_notif">Đẩy thông báo</string>
+    <string name="pref_title_ringtone">Nhạc chuông</string>
+    <string name="pref_title_vibrate">Rung</string>
+    <string name="pref_title_copyright">Bản quyền</string>
+    <string name="pref_title_contact_us">Liên hệ chúng tôi</string>
+    <string name="pref_title_build">Phiên bản &amp; Serial</string>
+    <string name="pref_title_term">Thuật ngữ &amp; Chính sách</string>
+    <string name="pref_ringtone_silent">Chế độ im lặng</string>
+    <string name="grant_permission_storage">Bật quyền lưu trữ</string>
+
+    <string name="content_term">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolor risus, aliquet a erat quis, viverra molestie orci. Suspendisse vehicula porta libero. Nam tincidunt nulla ipsum, vel iaculis risus scelerisque sed. Phasellus venenatis, enim vel placerat blandit, leo eros bibendum erat, at auctor mauris diam ac risus. Aenean sit amet congue neque, sit amet condimentum elit. Fusce lacinia massa vel nisl scelerisque, in scelerisque dolor elementum. Vivamus leo enim, congue dictum congue vitae, porttitor id purus. Sed eu ultricies erat. Morbi hendrerit, mi ac volutpat commodo, magna turpis pretium nibh, at fringilla eros lorem quis tellus. Praesent porttitor purus nibh, ac vestibulum massa fringilla vel. Pellentesque dapibus nulla quis luctus dictum. In scelerisque ut ex sed facilisis. Nunc eu finibus nulla, ut hendrerit sem. Suspendisse accumsan risus vel diam fringilla iaculis.
+        \n\nQuisque facilisis finibus aliquam. Sed mattis, dui fringilla ornare finibus, orci odio blandit risus, ut maximus dui odio non leo. Donec laoreet lacus nisi, a mollis velit suscipit ac. Quisque faucibus ut nisl in congue. Nam sagittis consectetur tempus. Suspendisse eget posuere dui. Donec ultricies velit ex, vel cursus odio sollicitudin in. Nullam faucibus auctor ligula, eu rhoncus dui facilisis a. Curabitur vel feugiat est. Quisque congue at enim eleifend ultrices. Proin dapibus risus lorem, nec condimentum nunc consequat vitae. Quisque sapien lorem, vestibulum vitae justo eget, fringilla eleifend nisi.
+        \n\nMauris ultricies augue sit amet est sollicitudin laoreet. Fusce ut congue felis. Fusce dictum tristique elit nec iaculis. Mauris sodales tempus fringilla. Fusce nec nunc tempus, tempor sapien sit amet, ultricies erat. Mauris ultrices ac lorem ultrices facilisis. Nam pharetra, nisi a imperdiet interdum, nunc justo ultricies nisl, a laoreet massa dui vel enim. Pellentesque et magna ac tellus ullamcorper malesuada a ac nisl. Curabitur id est et neque convallis accumsan. Aliquam eleifend varius massa. Curabitur eu finibus tortor.
+        \n\nVivamus aliquam nisl rutrum orci volutpat porta in ornare est. Quisque ligula ipsum, vulputate id aliquam vitae, semper vitae orci. Nam non pulvinar ligula, eget tincidunt ante. Quisque sapien massa, varius tempus pretium id, vehicula at magna. Ut ut ultrices augue. Nam nec ullamcorper tellus, at finibus lectus. Fusce vel iaculis mauris, id porta nulla. Aenean ac mollis sapien. Morbi imperdiet augue tempus nulla luctus, sit amet feugiat purus elementum.
+    </string>
+    <string name="version_unknown">không xác định</string>
+
+
+    <!-- Other String -->
+    <string name="failed_text">Tải dữ liệu không thành công</string>
+    <string name="no_internet_text">Không có kết nối Internet</string>
+    <string name="no_item">Không có mặt hàng</string>
+    <string name="msg_data_loaded">Tải dữ liệu thành công</string>
+    <string name="msg_failed_load_data">Tải dữ liệu không thành công</string>
+    <string name="title_delete_confirm">Xác nhận xoá</string>
+    <string name="content_delete_confirm">Bạn có chắc chắn muốn xóa tất cả không&#160;</string>
+    <string name="delete_success">Xoá thành công</string>
+    <string name="msg_copied_clipboard">Đã sao chép văn bản vào khay nhớ tạm</string>
+    <string name="failed">Thất bại</string>
+
+    <string name="OK">OK</string>
+    <string name="GOT_IT">ĐÃ HIỂU</string>
+    <string name="YES">ĐỒNG Ý</string>
+    <string name="NO">KHÔNG</string>
+    <string name="SETTING">CÀI ĐẶT</string>
+    <string name="CANCEL">HUỶ</string>
+    <string name="CLOSE">ĐÓNG</string>
+    <string name="UPDATE">CẬP NHẬT</string>
+    <string name="DISMISS">BỎ QUA</string>
+    <string name="HIDE">ẨN</string>
+    <string name="RETRY">THỬ LẠI</string>
+    <string name="TRY_AGAIN">THỬ LẠI</string>
+    <string name="DETAILS">THÔNG TIN CHI TIẾT</string>
+    <string name="FAILED">THẤT BẠI</string>
+    <string name="TYPE_SEARCH">TÌM KIẾM</string>
+    <string name="NO_IMAGE">KHÔNG CÓ HÌNH ẢNH</string>
+    <string name="DELETE">XOÁ</string>
+    <string name="OPEN">MỞ</string>
+    <string name="SAVE">LƯU</string>
+    <string name="NEXT">TIẾP</string>
+    <string name="SKIP">BỎ QUA</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_product">Sản phẩm</string>
+
+</resources>

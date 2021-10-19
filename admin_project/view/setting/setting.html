@@ -1,0 +1,138 @@
+<md-card class="md-whiteframe-1dp md-padding">
+	<md-card-content>
+		<form role="form" name="thisForm">
+			<h2 class="md-title">Cài đặt ứng dụng</h2>
+			<md-divider></md-divider>
+			<br>
+			<div layout="row">
+				<md-input-container flex="30">
+					<label>Tiền tệ</label>
+					<md-select ng-model="selected_currency">
+						<md-option ng-repeat="cur in arr_currency" value="{{cur.code}}" selected="{{cur.code===conf_currency?'selected':''}}"> 
+							{{cur.code}} - {{cur.name}} 
+						</md-option>
+					</md-select>
+				</md-input-container>
+			</div>
+
+			<div layout="row" layout-align="start center">
+				<md-input-container flex="10">
+					<label>Thuế</label>
+					<input type="number" required name="tax" ng-model="conf_tax" maxlength="4">
+				</md-input-container>
+				<legend flex="5"><b>%</b></legend>
+				<md-input-container flex="15">
+					<label>Tin tức nổi bật</label>
+					<input type="number" required name="featured_news" ng-model="conf_featured_news" maxlength="1">
+				</md-input-container>
+			</div>
+
+			<div layout="row" layout-align="start start">
+				<md-input-container flex="50">
+					<label>Đơn vị giao hàng</label>
+					<md-chips ng-model="conf_shipping" required></md-chips>
+				</md-input-container>
+				<md-button md-no-ink class="md-primary" ng-click="resetShipping()" style="margin-top:20px;">ĐẶT LẠI</md-button>
+			</div>
+
+			<br>
+			<h2 class="md-title">Cài đặt email</h2>
+			<md-divider></md-divider>
+
+			<div layout="column" layout-align="start start">
+				<md-checkbox ng-model="conf_email_notif_on_order">Gửi email khi có đơn hàng mới</md-checkbox>
+				<md-checkbox ng-model="conf_email_notif_on_order_process">Gửi email khi đơn đặt hàng đã xử lý</md-checkbox>
+			</div>
+			<br><br>
+			<div layout="row" layout-align="start center">
+				<md-input-container flex="30">
+					<label>Email nhận phản hồi</label>
+					<input type="text" required ng-model="conf_email_reply_to" maxlength="50">
+				</md-input-container>
+			</div>
+
+			<div layout="row" layout-align="start start">
+				<md-input-container flex="50">
+					<label>BCC Email người nhận</label>
+					<md-chips ng-model="conf_email_receiver" required readonly="!conf_email_notif_on_order"></md-chips>
+				</md-input-container>
+				<md-button md-no-ink class="md-primary" ng-click="resetEmailReceiver()" style="margin-top:20px;">ĐẶT LẠI</md-button>
+			</div>
+			<br><br>
+
+			<div layout="row" layout-align="end center" flex="100">
+				<md-button ng-if="!submit_loading_conf" ng-disabled="thisForm.$invalid || !isReadySubmitConf()" ng-click="submitConf()" class="md-raised md-accent">
+					LƯU
+				</md-button>
+				<md-progress-circular ng-if="submit_loading_conf" class="md-accent" md-mode="indeterminate" md-diameter="30px"></md-progress-circular>
+			</div>
+
+		</form>
+	</md-card-content>
+</md-card>
+
+<br>
+<md-card class="md-whiteframe-1dp md-padding">
+	<md-card-content>
+		<h2 class="md-title">Cài đặt người dùng</h2>
+		<form role="form" name="thisFormUser">
+			<div layout="row">
+				<md-input-container flex="30">
+					<label>Tên</label>
+					<input name="name" minlength="1" maxlength="50" ng-model="userdata.name" required />
+					<div ng-messages="thisForm.name.$error">
+						<div ng-message='required'>required.</div>
+						<div ng-message='minlength'>min length 1</div>
+					</div>
+				</md-input-container>
+				<div flex="5"></div>
+				<md-input-container flex="30">
+					<label>Email</label>
+					<input type="email" minlength="5" maxlength="50" name="email" ng-model="userdata.email" required />
+					<div ng-messages="thisForm.email.$error">
+						<div ng-message='required'>required.</div>
+						<div ng-message='minlength'>min length 10.</div>
+					</div>
+				</md-input-container>
+			</div>
+
+
+			<div layout="row">
+				<md-input-container flex="30">
+					<label>Tên đăng nhập</label>
+					<input name="username" minlength="1" maxlength="20" ng-model="userdata.username" required />
+					<div ng-messages="thisForm.username.$error">
+						<div ng-message='required'>required.</div>
+						<div ng-message='minlength'>min length 5.</div>
+					</div>
+				</md-input-container>
+			</div>
+			<div layout="row">
+				<md-input-container flex="30">
+					<label>Mật khẩu</label>
+					<input type="password" name="password" ng-model="userdata.password" required />
+					<div ng-messages="thisForm.password.$error">
+						<div ng-message='required'>required.</div>
+					</div>
+				</md-input-container>
+				<div flex="5"></div>
+				<md-input-container flex="30">
+					<label>Nhập lại mật khẩu</label>
+					<input type="password" name="re_password" ng-model="re_password" />
+					<div ng-if="!isPasswordMatch() || !re_passwordValid" class="red-alert">Password not match</div>
+				</md-input-container>
+			</div>
+			<div layout="row" layout-align="end center" flex="100">
+				<md-button ng-if="!submit_loading" ng-disabled="!isPasswordMatch() || thisFormUser.$invalid || demo_version || isClean()" ng-click="submit(true)" class="md-raised md-accent">
+					THÊM MỚI
+				</md-button>
+				<md-button ng-if="!submit_loading" ng-disabled="!isPasswordMatch() || thisFormUser.$invalid || demo_version || isClean()" ng-click="submit(false)" class="md-raised md-accent">
+					CẬP NHẬT
+				</md-button>
+				<md-progress-circular ng-if="submit_loading" class="md-accent" md-mode="indeterminate" md-diameter="30px"></md-progress-circular>
+			</div>
+
+		</form>
+	</md-card-content>
+</md-card>
+

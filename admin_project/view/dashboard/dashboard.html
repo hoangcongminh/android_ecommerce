@@ -1,0 +1,100 @@
+<md-card class="md-whiteframe-1dp md-padding">
+
+    <div layout="row" layout-sm="column">
+        <md-card-content flex>
+            <p class="md-title title-no-top">Đơn hàng</p>
+            <md-divider></md-divider>
+            <div layout="row">
+                <item flex="40">Đang chờ</item> <item flex="5">:</item> <item flex>{{order.waiting}}</item>
+            </div>
+            <div layout="row">
+                <item flex="40">Đã xử lí</item> <item flex="5">:</item> <item flex>{{order.processed}}</item>
+            </div>
+            <div layout="row">
+                <item flex="40">Tổng đơn hàng</item> <item flex="5">:</item> <item flex>{{order.total}}</item>
+            </div>
+        </md-card-content>
+        <md-card-content flex></md-card-content>
+    </div>
+    <div layout="row" layout-sm="column">
+        <md-card-content flex>
+            <p class="md-title title-no-top">Thông tin sản phẩm</p>
+            <md-divider></md-divider>
+            <div layout="row">
+                <item flex="40">Đã phát hành</item> <item flex="5">:</item> <item flex>{{product.published}}</item>
+            </div>
+            <div layout="row">
+                <item flex="40">Bản thảo</item> <item flex="5">:</item> <item flex>{{product.draft}}</item>
+            </div>
+            <md-divider></md-divider>
+            <div layout="row">
+                <item flex="40">Có hàng</item> <item flex="5">:</item> <item flex>{{product.ready_stock}}</item>
+            </div>
+            <div layout="row">
+                <item flex="40">Hết hàng</item> <item flex="5">:</item> <item flex>{{product.out_of_stock}}</item>
+            </div>
+            <div layout="row">
+                <item flex="40">Tạm ngưng</item> <item flex="5">:</item> <item flex>{{product.suspend}}</item>
+            </div>
+        </md-card-content>
+        <md-card-content flex>
+            <p class="md-title title-no-top">Thông tin danh mục</p>
+            <md-divider></md-divider>
+            <div layout="row">
+                <item flex="40">Đã phát hành</item> <item flex="5">:</item> <item flex>{{category.published}}</item>
+            </div>
+            <div layout="row">
+                <item flex="40">Bản thảo</item> <item flex="5">:</item> <item flex>{{category.draft}}</item>
+            </div>
+        </md-card-content>
+    </div>
+</md-card>
+<br>
+<md-card class="md-whiteframe-1dp md-padding">
+    <div layout="row" layout-sm="column">
+        <md-card-content flex>
+            <p class="md-title title-no-top">Tin tức</p>
+            <md-divider></md-divider>
+            <div layout="row">
+                <item flex="40">Nổi bật</item> <item flex="5">:</item> <item flex>{{news.featured}}  ( tối đa {{setting.featured_news}} )</item>
+            </div>
+            <div layout="row">
+                <item flex="40">Đã phát hành</item> <item flex="5">:</item> <item flex>{{news.published}}</item>
+            </div>
+            <div layout="row">
+                <item flex="40">Bản thảo</item> <item flex="5">:</item> <item flex>{{news.draft}}</item>
+            </div>
+        </md-card-content>
+        <md-card-content flex>
+            <p class="md-title title-no-top">Phiên bản ứng dụng</p>
+            <md-divider></md-divider>
+            <div layout="row">
+                <item flex="40">Hoạt động</item> <item flex="5">:</item> <item flex>{{app.active}}</item>
+            </div>
+            <div layout="row">
+                <item flex="40">Không hoạt động</item> <item flex="5">:</item> <item flex>{{app.inactive}}</item>
+            </div>
+        </md-card-content>
+    </div>
+    <div layout="row" layout-sm="column">
+        <md-card-content flex>
+            <p class="md-title title-no-top">Cài đặt ứng dụng</p>
+            <md-divider></md-divider>
+            <div layout="row">
+                <item flex="40">Tiền tệ</item> <item flex="5">:</item> <item flex>{{setting.currency}}</item>
+            </div>
+            <div layout="row">
+                <item flex="40">Thuế</item> <item flex="5">:</item> <item flex>{{setting.tax}} %</item>
+            </div>
+        </md-card-content>
+        <md-card-content flex>
+            <p class="md-title title-no-top">Thông báo</p>
+            <md-divider></md-divider>
+            <div layout="row">
+                <item flex="40">Khách hàng</item> <item flex="5">:</item> <item flex>{{notification.users}}</item>
+            </div>
+        </md-card-content>
+    </div>
+</md-card>
+
+<br>
